@@ -1,0 +1,32 @@
+{
+	"addbatch": "/api/user/addbatch",
+	"addCustomer": "/api/user/addcustomer",
+	"addItems": "/api/user/items",
+	"addSupplier": "/api/user/addsupplier",
+	"barcodeDetails": "/api/user/getitembybarcode",
+	"batchDetails": "/api/user/getbatch",
+	"customerDetails": "/api/user/customer",
+	"fetchItems": "/api/user/items",
+	"fetchItemsbyId": "/api/user/itemsbyid",
+	"getBarcode": "/api/user/getbarcode",
+	"PurchaseBilling": "/api/user/purchase",
+	"supplierDetails": "/api/user/supplier",
+	"sellBilling": "/api/user/sale",
+	"getbill": "/api/user/getCustomerbill",
+	"getbybillid": "/api/user/getbybillid",
+	"getpurchasebillbyid": "/api/user/getpurchasebillbyid",
+	"getPurchasebill": "/api/user/getPurchasebill",
+	"getgst": "/api/user/gstreport",
+	"notif": "/api/user/itemsdiminishingnotif",
+	"expiry": "/api/user/expiry",
+	"register": "/api/user/register",
+	"login": "/api/user/login",
+	"purchasereturn": "/api/user/purchasereturn",
+	"customerreturn": "/api/user/customerreturn",
+	"updatebatch": "/api/user/updatebatch",
+	"notiflimit": "/api/user/notiflimit"
+}
+
+
+
+

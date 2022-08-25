@@ -1,0 +1,51 @@
+button{
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px ;
+  margin: 5px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top:30px;
+  border-radius: 10px;
+    
+
+}
+.heading h1{
+    font-size: 20px;
+    padding:10px;
+    text-align: right;
+}
+.searchbar button{
+    margin-left:-1000px;
+}
+.Supplier h1{
+ font-size: 3s0px;
+}
+.addsupplier p{
+ font-size:25px;
+ margin-top:-50px;
+}
+.addsupplier p input{
+    font-size: 20px;
+}
+.addsupplier .searchbar{
+    display: inline-block;
+}
+.addsupplier .searchbar button{
+ margin-left:500px;
+ margin-top:-200px;   
+}
+.addsupplier button{
+    margin-left:1200px;
+}
+.addproduct button{
+    margin-left: 1200px;
+}
+.hr-style{
+    color: #d3d3d3;
+     background-color: #d3d3d3;
+     height: 2px;
+     margin-top: 25px;
+  }

@@ -1,0 +1,60 @@
+.features-col {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 10px;
+  height: 250px;
+  line-height: 2rem;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  margin-top: 10%;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.fa-file-invoice {
+  font-size: 6rem;
+  color: #7cbd1e;
+  padding-bottom: 1rem;
+}
+
+.fa-table {
+  font-size: 6rem;
+  color: #7cbd1e;
+  padding-bottom: 1rem;
+}
+
+.fa-users {
+  font-size: 6rem;
+  color: #7cbd1e;
+  padding-bottom: 1rem;
+}
+
+.fa-people-carry {
+  font-size: 6rem;
+  color: #7cbd1e;
+  padding-bottom: 1rem;
+}
+
+.fa-exchange-alt {
+  font-size: 6rem;
+  color: #7cbd1e;
+  padding-bottom: 1rem;
+}
+
+.fa-boxes {
+  font-size: 6rem;
+  color: #7cbd1e;
+  padding-bottom: 1rem;
+}
+
+.home-links {
+  color: Black;
+  text-decoration: none;
+  font-size: 2.2rem;
+  padding: 0.5rem 1rem;
+}
+
+.features-col:hover {
+  background-color: #bceb3c;
+}

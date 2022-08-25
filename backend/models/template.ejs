@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        table {
+            width: 100%;
+            margin :auto;
+            border-collapse: collapse;   
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding-left: 3px;
+        }
+        .sname{
+            border-bottom: 1px solid rgb(110, 106, 106);
+            margin-top: 0px;
+            margin-bottom: 5px;
+            padding: 0 2px;
+            
+        }
+        .billno{
+            width: fit-content;
+            position: fixed;
+            top: 5px;
+            right: 10px;
+            padding-bottom: 5px;
+        }
+        .css-serial {
+  counter-reset: serial-number;  /* Set the serial number counter to 0 */
+}
+
+.css-serial td:first-child:before {
+  counter-increment: serial-number;  /* Increment the serial number counter */
+  content: counter(serial-number);  /* Display the counter */
+}
+body{
+    margin: 0;
+    padding: 3px;
+    border: 2px solid black;
+    min-height: 8.25in;
+    
+    }
+    .payment{
+        margin-bottom: 5px;
+    }
+    .sumry{
+       text-align: right;
+       padding-top: 5px;
+    }
+.customer span strong {
+    font-weight: 500;
+}
+
+        </style>
+    </head>
+    <body>
+        <div style="width: 100%; ">
+            <h1 class="sname">Moodi Retail Store </h1>     
+            <div class="billno">
+                <span> Date: <%= Date %></span>
+                <span style="display:block; font-weight: 800;">Bill No: <%= Billno %></span>
+            </div>
+            
+            <div class="customer">
+                <strong>Bill To :</strong>
+                <span style="display: block;" > <strong >Name</strong>  : <%= Customer.Name %></span>
+                <span  style="display: block;"> <strong>Phone</strong>  : <%= Customer.Phone %></span>
+                <span  style="display: block;"> <strong>Email</strong>  : <%= Customer.Email %></span>
+            </div>
+            <div style="text-align: center;">            
+                <h3>Product Invoice</h5>
+                    <div class="payment">
+                        <span style="margin-right: 10px;">Pay Mode  : <%=Mode%></span>
+                        <span style="margin-right: 10px;"> Amount Paid: <%=Recived%></span>
+                        <span >Ledger : <%=Ledger%></span>
+                    </div>
+                <table class="css-serial">
+                    <thead>
+                        <th>S No </th>
+                        <th>Product </th>
+                        <th>MRP </th>
+                        <th>Price </th>
+                        <th>Discount</th>
+                        <th>Qty</th>
+                        <th>Total</th>
+                    </thead>
+                <% if (Items.length > 0) { %>
+                    <% Items.forEach(Item => {%>
+                       <tr>
+                        <td></td>
+                        <td><%= Item.Company %> <%= Item.Name %> <%= Item.WtVol %> </td>
+                        <td><%= Item.MRP %></td>
+                        <td><%= Item.SellingPrice %></td>
+                        <td><%= Item.Discount %></td>
+                        <td><%= Item.Quantity %></td>
+                        <td><%= Item.Total %></td>
+                       </tr>
+                    <%  });%>
+                <% }%>
+                </table>
+                <div class="sumry">
+                    <span  style="display: block;">Total Payble Value : <%= Total%></span>
+                    <span  style="display: block;">Total Savings : <%= Saving %></span>
+                </div>
+                
+
+             </div>
+           
+             <div style="margin-top: 10px; position: fixed; bottom: 2px; border-top: 1px solid black; width: 100%;">
+            <div>
+                <span>Contact : 0123456789</span> <span style="margin-left: 30px;"> Email: Moodistore@gmail.com</span>
+            </div>
+            <p>Address :  Address of Store and Other deatils</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+.head-customer {
+  text-align: center;
+}
+.form button{
+  font-size: 25px;
+}
+.hr-style{
+ 
+    color: black;
+    background-color: gray;
+    height: 1px;
+    margin-top: 25px;
+
+}
+.details{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+  padding: 50px 50px 25px 50px;
+}
+.form{
+  margin-top:50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:25px
+  
+}

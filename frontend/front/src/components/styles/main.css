@@ -1,0 +1,16 @@
+.error-alert {
+  position: absolute;
+  left: 30vw;
+  width: 40vw;
+}
+
+.login,
+.registeration {
+  background: #121212;
+  height: 100vh;
+}
+
+.form-container {
+  margin-top: 25vh;
+}
+/*# sourceMappingURL=main.css.map */
